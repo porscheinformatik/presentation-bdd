@@ -74,13 +74,14 @@
                     <p><i>Vom Use-Case zum Test-Case</i></p>
 
                     <ul class="keywords">
-                        <li>Behavior Driven Development</li>
-                        <li>Zusammenarbeit stärken</li>
+                        <li>Methode der agilen Softwareentwicklung</li>
+                        <li>Zusammenarbeit verbessern</li>
                         <li>Automatisierte Tests als Benefit</li>
                     </ul>
 
-                    <p>Behavior Driven Develoment hat das Ziel die Zusammenarbeit der Beteiligten am Softwareentwicklungsprozess
-                        zu stärken. Außerdem sollen aus dieser Zusammenarbeit automatisierte Tests als Benefit entstehen.</p>
+                    <p>Behavior Driven Develoment ist eine Methode der agilen Softwareentwicklung und hat das Ziel die Zusammenarbeit
+                        der Beteiligten zu verbessern. Außerdem sollen aus dieser Zusammenarbeit automatisierte Tests als
+                        Benefit entstehen.</p>
                     <hr />
                     <p>
                         <strong>Hinweise zu dieser Präsentation:</strong>
@@ -92,26 +93,8 @@
                 </aside>
             </section>
 
-            <section id="me" data-transition="slide-in fade-out">
-                <img src="me.jpg" />
-                <h2>Manfred Hantschel</h2>
-                <hr />
-                <p class="readable">Software Entwickler, Porsche Informatik GmbH</p>
-
-                <aside class="notes">
-                    <p>Mein name ist Manfred Hantschel und ich bin Softwareentwickler bei der Porsche Informatik GmbH in Salzburg.</p>
-                    <p>Meine Aufgaben reichen von der technischen Umsetzung und Leitung bis hin zur Produktverantwortung für
-                        mehrere Projekte. Die Palette der Applikationen reicht dabei von internationalen webbasierten Unternehmensportalen,
-                        über PDA- und Smartphone-basierten Applikationen für die Unterstützung von Händlern, bis hin zu Verwertungsplattformen
-                        für Neu- und Gebrauchtfahrzeuge.</p>
-                    <p>Seit 2011 setze ich mich, unter Anderem, mit dem Thema Testautomatisierung und mit der Einführung von
-                        Behavior Driven Development auseinander. Die Methodik wird in der Porsche Informatik bei mehreren
-                        Projekten – teilweise Webapplikationen, teilweise Client-Server-Applikationen auf Java-Basis – eingesetzt.</p>
-                </aside>
-            </section>
-
             <section class="contrast-bright" data-transition="zoom-in fade-out" data-background-transition="fade" data-background="weltmaschine.jpg">
-                <h2>Behavior Driven Developement</h2>
+                <h2>Behavior Driven Development</h2>
                 <hr />
                 <h2 class="readable">Theorie &amp; Praxis</h2>
 
@@ -150,6 +133,31 @@
                 </aside>
             </section>
 
+            <section id="me" data-transition="slide-in fade-out">
+                <div class="flex">
+                    <div style="width: 800px; margin-right: 32px;">
+                        <h2>Manfred Hantschel</h2>
+                        <hr />
+                        <p class="readable">Software Entwickler, Porsche Informatik GmbH</p>
+                    </div>
+
+                    <div style="width: 192px;">
+                        <img src="me.jpg" />
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    <p>Mein name ist Manfred Hantschel und ich bin Softwareentwickler bei der Porsche Informatik GmbH in Salzburg.</p>
+                    <p>Meine Aufgaben reichen von der technischen Umsetzung und Leitung bis hin zur Produktverantwortung für
+                        mehrere Projekte. Die Palette der Applikationen reicht dabei von internationalen webbasierten Unternehmensportalen,
+                        über PDA- und Smartphone-basierten Applikationen für die Unterstützung von Händlern, bis hin zu Verwertungsplattformen
+                        für Neu- und Gebrauchtfahrzeuge.</p>
+                    <p>Seit 2011 setze ich mich, unter Anderem, mit dem Thema Testautomatisierung und mit der Einführung von
+                        Behavior Driven Development auseinander. Die Methodik wird in der Porsche Informatik bei mehreren
+                        Projekten – teilweise Webapplikationen, teilweise Client-Server-Applikationen auf Java-Basis – eingesetzt.</p>
+                </aside>
+            </section>
+
             <section data-transition="zoom-in slide-out">
                 <section data-background="LightSteelBlue">
                     <h1 class="readable" style="font-size: 250%">Methode der agilen Softwareentwicklung</h1>
@@ -160,7 +168,8 @@
                         <ul class="keywords">
                             <li>Methodik</li>
                             <li>Dan North, 2006</li>
-                            <li>TDD verbessern</li>
+                            <li>TDD verbessern &rarr; nicht im Designprozess</li>
+                            <li>BDD löst Probleme und geht weiter</li>
                         </ul>
 
                         <p>
@@ -187,9 +196,13 @@
                         <h3>Bessere Zusammenarbeit</h3>
 
                         <ul class="keywords">
-                            <li>Entwickler <a href="javascript:Reveal.nextFragment()">&rarr; next fragment</a></li>
-                            <li>QA <a href="javascript:Reveal.nextFragment()">&rarr; next fragment</a></li>
-                            <li>Product Owner <a href="javascript:Reveal.nextFragment()">&rarr; next fragment</a></li>
+                            <li>Zusammenarbeit verbessern</li>
+                            <ul>
+                                <li>Entwickler <a href="javascript:Reveal.nextFragment()">&rarr; next fragment</a></li>
+                                <li>QA <a href="javascript:Reveal.nextFragment()">&rarr; next fragment</a></li>
+                                <li>Product Owner <a href="javascript:Reveal.nextFragment()">&rarr; next fragment</a></li>
+                            </ul>
+                            <li>TDD als Benefit</li>
                         </ul>
 
                         <p>In erster Linie soll die Zusammenarbeit zwischen</p>
@@ -217,8 +230,9 @@
                             <li>Domain-Driven-Design
                                 <ul>
                                     <li>Konzentration auf Fachlogik anstatt Technik</li>
+                                    <li>Komplexe fachliche Zusammenhänge zerteilen</li>
                                     <li>vereinfachte Problemlösung</li>
-                                    <li>Am Ziel vorbei entwickeln</li>
+                                    <li>Entwickler sehen nur Teilbereich</li>
                                 </ul>
                             </li>
                             <li>Test-Driven-Development
@@ -310,7 +324,7 @@ Then &lt;POSTCONDITION&gt;
                         <h3>BDD für's Domain-Driven Design ...</h3>
 
                         <ul class="keywords">
-                            <li>Sprache für fachliche Abläufe</li>
+                            <li>standardisierte Sprache für fachliche Abläufe</li>
                             <ul>
                                 <li>&rarr; User-Stories</li>
                                 <li>&rarr; Akzeptanzkriterien</li>
@@ -330,7 +344,7 @@ Then &lt;POSTCONDITION&gt;
                         <p>Und bereits da werden viele Probleme gelöst. Aus meiner Erfahrung tauchen hier oft schon die großen
                             Probleme der Umsetzung auf – nämlich dann wenn der fachliche Prozess schon nicht logisch ausgereift
                             ist. Die Entwicklung kann fast alles umsetzen, einzige Vorbedingung: die Aufgabe muss deterministisch
-                            sein. Für die Formulierung des Akzeptanztests muss das Problem auf einem Level beleuchtet werden,
+                            sein. Für die Formulierung des Akzeptanz-Tests muss das Problem auf einem Level beleuchtet werden,
                             das logische Probleme frühzeitig zu Tage fördert.</p>
                     </aside>
                 </section>
@@ -352,15 +366,15 @@ in order to select and edit one.
 
 Scenario:
 
-Given the list of employees is open
-When I click on the name of the first employee
-Then the detail page of the emplyee should open.
+Given the list of employees is displayed
+When I click on the name of an employee
+Then the detail page should be opened.
                                 </code></pre>
                             </div>
                         </div>
 
                         <div style="width: 40%">
-                            <h2>Akzeptanztests</h2>
+                            <h2>Akzeptanz-Tests</h2>
                             <p class="readable">Konzentration auf das Problem</p>
                             <p class="readable">Eingehen auf fachliche Details</p>
                         </div>
@@ -370,15 +384,16 @@ Then the detail page of the emplyee should open.
                         <h3>BDD für's Test-Driven Development ...</h3>
 
                         <ul class="keywords">
-                            <li>Akzeptanztests</li>
-                            <li>fachliche Ebene</li>
+                            <li>Werkzeug: Akzeptanz-Tests</li>
+                            <li>konzentration auf Problem</li>
+                            <li>fachliche Ebene (anders als Unit-Tests)</li>
                         </ul>
 
-                        <p>Für das Test-Driven Development stellt BDD ein Werkzeug zur Verfügung - nämlich Akzeptanztests.</p>
-                        <p>Akzeptanztests konzentrieren sich, wie von TDD gefordert, auf das Problem selbst. Die Umsetzung der
-                            Lösung kann zunächst vollkommen ignoriert werden. Die Tests bewegen sich auf einer rein fachlichen
+                        <p>Für das Test-Driven Development stellt BDD ein Werkzeug zur Verfügung - nämlich Akzeptanz-Tests.</p>
+                        <p>Akzeptanz-Tests konzentrieren sich, wie von TDD gefordert, auf das Problem selbst. Die Umsetzung
+                            der Lösung kann zunächst vollkommen ignoriert werden. Die Tests bewegen sich auf einer rein fachlichen
                             Ebene, anders als Unit-Tests. Trotzdem ist es möglich, ja gefordert, auf fachliche Details einzugehen.</p>
-                        <p>Durch die Schlüsselwörter ist es möglich die Akzeptanztests automatisch zu verarbeiten und programmtechnisch
+                        <p>Durch die Schlüsselwörter ist es möglich die Akzeptanz-Tests automatisch zu verarbeiten und programmtechnisch
                             Tests auf Grundlage der Kriterien verfassen.</p>
                     </aside>
                 </section>
@@ -432,7 +447,7 @@ Then the detail page of the emplyee should open.
                             <li>Explorativ, Usability, Abnahme</li>
                             <li>Unit-Tests</li>
                             <li>Performance-Tests</li>
-                            <li>Akzeptanztests</li>
+                            <li>Akzeptanz-Tests</li>
                         </ul>
 
                         <p>Versucht man nun die verschiedensten Testarten in dieses System einzuordnen, fällt das relativ leicht:</p>
@@ -441,10 +456,9 @@ Then the detail page of the emplyee should open.
                             also das Produkt. Auf der zweiten Ebene betrachtet sind diese Tests aber ausschließlich durch
                             fachliche Anforderungen geprägt – man testet also gegen die fachliche Spezifikation.</p>
                         <h4>Unit-Tests, Komponenten-Tests, ...</h4>
-                        <p>Wenn man Unittests &amp; Co nach TDD schreibt (und nicht nachgelagert um irgendwelche Kennzahlen
-                            zu befriedigen ☺), unterstützen sie das Team bei der Arbeit indem sie Einfluss auf die Systemarchitektur
-                            haben und Seiteneffekte sehr schnell erkannt werden. Allerdings sind sie technisch geprägt, werden
-                            also durch Entwickler entworfen und geschrieben.</p>
+                        <p>Wenn man Unittests &amp; Co nach TDD schreibt, unterstützen sie das Team bei der Arbeit indem sie
+                            Einfluss auf die Systemarchitektur haben und Seiteneffekte sehr schnell erkannt werden. Allerdings
+                            sind sie technisch geprägt, werden also durch Entwickler entworfen und geschrieben.</p>
                         <h4>Performance- und Last-Tests, Skalierbarkeitstests, ...</h4>
                         <p>Auch diese Tests versuchen das Produkt zu kritisieren indem sie die nicht-funktionalen Anforderungen
                             in Frage stellen. Sie sind technisch geprägt da ein Product-Owner wohl kaum in der Lage sein
@@ -481,7 +495,7 @@ Then the detail page of the emplyee should open.
                     <h2>Fallbeispiel = User-Story</h2>
                     <hr/>
                     <p class="readable">genau ein Anwendungsfall</p>
-                    <p class="readable">Einfachheit ist Trumpf</p>
+                    <p class="readable">ideal aus Benutzersicht</p>
 
                     <pre><code class="gherkin">
 User-Story: Add article to cart
@@ -490,6 +504,8 @@ As a customer
 I want to select an article
 in order to put it into my shopping cart.
                     </code></pre>
+
+                    <p class="minor readable">&rarr; vermeidet Redundanz in Lasten- und Pflichenheft, Use-Cases und Konzepten</p>
 
                     <aside class="notes">
                         <h3>Fallbeispiel = User-Story</h3>
@@ -525,7 +541,7 @@ in order to put it into my shopping cart.
                         </ul>
 
                         <p>Und weil wir agil entwickeln, brauchen wir die User-Stories sowieso, nämlich als Sprintziele. Aber
-                            erst durch BDD finden sie User-Stories wirklich Einzug in unser Projekt, da sie maschinell verarbeitet
+                            erst durch BDD finden die User-Stories wirklich Einzug in unser Projekt, da sie maschinell verarbeitet
                             werden müssen.</p>
                     </aside>
                 </section>
@@ -550,7 +566,9 @@ in order to put it into my shopping cart.
                 <section>
                     <h2>Akzeptanzkriterien = Scenarios</h2>
                     <hr/>
-                    <p class="readable">mehrere Szenarien je Story</p>
+                    <p class="readable">mehrere Szenarien je User-Story</p>
+                    <p class="readable">Aktionen eines Benutzers</p>
+                    <p class="readable">Sonder- und Problemfälle</p>
                     <p class="readable">Einfachheit ist Trumpf</p>
 
                     <pre><code class="gherkin">
@@ -558,7 +576,7 @@ Scenario: Add article to cart
 
 [...]
 
-Given the detail page of article "ART000042" is open
+Given the detail page of article "ART000042" is displayed
 When the user clicks the "Add to Cart" button
 Then the added to cart message should appear
 And the cart should contain the article "ART000042"
@@ -569,7 +587,7 @@ And the cart should contain the article "ART000042"
 
                         <ul class="keywords">
                             <li>Mehrere Akzeptanzkriterien je User-Story</li>
-                            <li>Sonder- und Problemfälle</li>
+                            <li>Aktionen, Sonder- und Problemfälle</li>
                             <li>Given, When, Then &rarr; Automatisierung</li>
                         </ul>
 
@@ -592,20 +610,20 @@ And the cart should contain the article "ART000042"
                     <hr/>
                     <p class="readable">Dadurch Einbindung in Entwicklungsprozess</p>
                     <p class="readable">Stories &rarr; Werkzeug</p>
-                    <p class="readable">Redundanz vermeiden</p>
-                    <p class="readable minor">(Ersatz für Lasten- und Pflichtenheft?)</p>
+                    <p class="readable">fachliche Fehler früh erkennen</p>
 
                     <aside class="notes">
                         <h3>Abstimmung mit Kunden</h3>
 
                         <ul class="keywords">
                             <li>Abstimmung Kunde &rarr; eingebunden</li>
-                            <li>Ersetzt teilweise Lasten- und Pflichtenheft</li>
+                            <li>Stories &rarr; Werkzeug</li>
+                            <li>fachliche Fehler früh erkennen</li>
                         </ul>
 
                         <p>Die fertigen User-Stories und Akzeptanzkriterien werden mit dem Kunden gemeinsam entwickelt, oder
                             zumindest mit ihm abgestimmt. Der Kunde wird somit in den Entwicklungsprozess mit eingebunden.
-                            Hier zeigt sich schon ein erster Vorteil. Früher sind fachliche Fehler erst im fertigen Produkt
+                            Hier zeigt sich schon ein weiterer Vorteil. Früher sind fachliche Fehler erst im fertigen Produkt
                             aufgetaucht. Die Stories geben dem Entwicklungsteam ein Werkzeug in die Hand, mit dem der fachliche
                             Ablauf vollständig definiert werden kann.</p>
                         <p>Wenn man wirklich agil arbeitet, können die Akzeptanzkriterien ein Lasten- und Pflichtenheft zumindest
@@ -650,7 +668,7 @@ And the cart should contain the article "ART000042"
                     <h2>Umsetzung der Tests</h2>
                     <hr/>
                     <p class="readable">Implementation: Given, When, Then</p>
-                    <p class="readable">Test first</p>
+                    <p class="readable">Test-First</p>
                     <p class="readable">Eingebunden in Spezifikations- und Testprozess</p>
 
                     <aside class="notes">
@@ -688,7 +706,7 @@ And the cart should contain the article "ART000042"
                 <section>
                     <h2>Umsetzung und Abnahme</h2>
                     <hr/>
-                    <p class="readable">Umsetzung nach User-Stories und Acceptance Tests</p>
+                    <p class="readable">Umsetzung nach User-Stories und Akzeptanz-Tests</p>
                     <p class="readable">QA testet zunächst manuell, dann automatisiert</p>
                     <p class="readable">Automatische Spezifikation für Kunden</p>
 
@@ -762,18 +780,24 @@ And the cart should contain the article "ART000042"
                         <div style="width: 640px; margin-right: 32px;">
                             <h2>Porsche Informatik GmbH</h2>
                             <hr />
-                            <p class="readable">Teil der Porsche Holding</p>
                             <p class="readable"><a href="http://porscheinformatik.at">http://porscheinformatik.at</a></p>
-                            <p class="readable">Über 400 MA in allen Bereichen der IT</p>
-                            <p class="readable">Softwarelösungen für alle Bereiche des Automobilhandels</p>
-                            <hr />
-                            <p class="readable">BDD in mehreren großen Projekten</p>
                         </div>
 
                         <div style="width: 352px;">
                             <img src="poi.jpg" />
                         </div>
                     </div>
+
+                    <aside class="notes">
+                        <h3>Porsche Informatik GmbH</h3>
+
+                        <ul class="keywords">
+                            <li>Teil der Porsche Holding</li>
+                            <li>über 400 MA in allen Bereichen der IT</li>
+                            <li>Softwarelösungen für Automobilhandel</li>
+                            <li>BDD in mehreren großen Projekten</li>
+                        </ul>
+                    </aside>
                 </section>
 
                 <section>
@@ -796,6 +820,7 @@ And the cart should contain the article "ART000042"
                                 <li>offizielle Statusverfolgung</li>
                             </ul>
                             <li>erst Epics, dann User-Stories</li>
+                            <li>User-Stories noch nicht ausformuliert</li>
                         </ul>
 
                         <p>Am Anfang war die Idee. Diese wird meist vom Kunden bzw. dem Product-Owner ausgebrütet und formuliert.
@@ -832,6 +857,7 @@ And the cart should contain the article "ART000042"
                             <li>Vor Umsetzung: Konkretisierung</li>
                             <li>Beteiligung: Kunde, QA, Entw.</li>
                             <li>einfache Fragen</li>
+                            <li>Szenarien noch nicht maschinell verarbeitbar</li>
                             <li>weitere Dokumente: UI-Mockups, Aufwände, ...</li>
                         </ul>
 
@@ -843,7 +869,7 @@ And the cart should contain the article "ART000042"
                             verarbeitet werden können.</p>
                         <p>Je nach Umfang des Features entstehen auch noch zusätzliche Dokumentation: UI-Mockups, eine Aufwandsschätzung,
                             Schnittstellendokumentationen, usw. Wir achten darauf, dass jede einzelne zusätzliche Dokumentation
-                            auch in der Story referenziert ist.
+                            auch in der Story referenziert ist und die Redundanz so gering wie möglich ist.
                         </p>
                     </aside>
                 </section>
@@ -854,8 +880,7 @@ And the cart should contain the article "ART000042"
 
                     <h2>Vor Sprint: Formalisierung</h2>
                     <hr/>
-                    <p class="readable">Bewertung für Automatisierung:</p>
-                    <p class="minor readable">Wichtigkeit, Aufwand, Sinn</p>
+                    <p class="readable">Bewertung für Automatisierung: Wichtigkeit, Aufwand, Sinn</p>
                     <p class="readable">Formulierung der Szenarien</p>
 
                     <pre><code class="gherkin">
@@ -946,11 +971,11 @@ But with a count of 2.
                     <div class="flex-left">
                         <img class="no-border" src="simple-impl.svg" />
 
-                        <pre style="width: 50%"><code class="Java">
+                        <pre style="width: 50%; font-size: 16px;"><code class="Java">
 @Given("the user $name is logged in")
 public void ensureUserLoggedIn(String name)
 {
-    User user = userSrevice.getCurrentUser();
+    User user = userService.getCurrentUser();
 
     if (!name.equals(user.getName()))
     {
@@ -986,7 +1011,10 @@ public void ensureUserLoggedIn(String name)
                     <div class="flex-left">
                         <img class="no-border" src="enhanced-impl.svg" />
 
-                        <pre style="width: 50%"><code class="Java">
+                        <pre style="width: 50%; font-size: 16px;"><code class="Java">
+@Autowired
+private UserWorkflow userWorkflow;
+
 @Given("the user $name is logged in")
 public void ensureUserLoggedIn(String name)
 {
@@ -1057,7 +1085,7 @@ public void ensureUserLoggedIn(String name)
                     <h2>Was haben wir erriecht?</h2>
                     <hr/>
                     <p class="readable">Anpassungen nur an einer Stelle</p>
-                    <p class="readable">Wiederverwendung der Workflows, Componenten und Pages</p>
+                    <p class="readable">Wiederverwendung der Workflows, Components und Pages</p>
                     <p class="readable">Mapping unterstützt Test-Driven-Development</p>
                     <p class="readable">Automatisierungstool ist austauschbar</p>
 
@@ -1094,52 +1122,54 @@ public void ensureUserLoggedIn(String name)
                     <h1>Do's &amp; Don't's</h1>
                     <hr/>
                     <p class="readable">Nicht alles automatisieren</p>
-                    <p class="readable">Szenarien müssen lesbar bleiben</p>
-                    <p class="readable">Keep it simple</p>
-                    <p class="readable">Auf die Wartbarkeit achten</p>
+                    <p class="readable">KISS</p>
                     <p class="readable">Robustheit, Robustheit, Robustheit</p>
-                    <p class="readable">BDD ist mehr (als automatisierte GUI-Tests)</p>
+                    <p class="readable">BDD ist mehr als automatisierte GUI-Tests</p>
 
                     <aside class="notes">
                         <h3>Do's &amp; Don't's</h3>
 
                         <ul class="keywords">
                             <li>Nicht alles automatisieren</li>
-                            <li>Szenarien müssen lesbar bleiben</li>
-                            <li>Keep it simple</li>
-                            <li>Auf die Wartbarkeit achten</li>
+                            <li>KISS - z.B. Datumsfeld</li>
                             <li>Robustheit</li>
-                            <li>BDD ist mehr (als automatisierte GUI-Tests)</li>
+                            <li>BDD ist mehr als automatisierte GUI-Tests</li>
                         </ul>
 
                         <h4>Nicht alles automatisieren</h4>
                         <p>
                             Je mehr man automatisiert, umso mehr muss man auch pflegen. Selbst wenn man ein ausgeklügeltes Framework verwendet, Anpassungen
-                            wird es immer geben. BDD können keine erfahrene QA-Abteilung ersetzen.</p>
+                            wird es immer geben. BDD kann sowieso keine erfahrene QA-Abteilung ersetzen, also sollten wir
+                            in erster Linie essentielle Teile der Applikation testen. Wir nennen das Positiv-Tests.</p>
+
                         <h4>Szenarien müssen lesbar bleiben</h4>
                         <p>
                             Verketten Sie nicht unzählige Vorbedingungen in einem Scenario nur weil es die Steps schon gibt. Verstecken Sie die Komplexität
                             lieber in der Implementierung der Steps und formulieren Sie aussagekräftige Steps.
                         </p>
+
                         <h4>Machen Sie sich das Leben so leicht wie es geht</h4>
                         <p>
                             Je komplizierter der Weg vom Scenario bis zur fertigen Automatisierung ist, umso schwieriger wird es sein, ihre Entwickler
                             zum Mitmachen zu bewegen.</p>
+
                         <h4>Vergessen Sie nicht auf die Wartbarkeit zu achten</h4>
                         <p>
                             ... steht etwas im Widerspruch zur obigen Aussage. Wenn man aber Steps mit Record&amp;Replay Scripten automatisiert, ist
                             man schnell in der Wartungsfalle und kommt nur unglaublich schwer wieder heraus.</p>
                         <h4>Robustheit, Robustheit, Robustheit</h4>
+
                         <p>
                             Achten Sie bei Tests auf ihre Robustheit. Kein Test geht von Vorbedingungen aus, die nicht spezifiziert sind. Will ich einen
                             Artikel verkaufen, muss ein verkaufbarer Arktikel verfügbar sein. Das "Given" überprüft ob ein
                             solcher Artikel vorhanden ist, legt wenn nötig einen an und merkt sich die Id, damit der Artikel
                             im "When" verkauft werden kann. Stories sollten ihre Testdaten aufräumen, und wenn die eigenen
                             Testdaten zu Beginn schon in der Datenbank sind, trotzdem laufen.</p>
+
                         <h4>BDD ist mehr (als automatisierte GUI-Tests)</h4>
                         <p>
                             Die GUI-Tests, die anhand der Feature-Files ablaufen sind beeindruckend. Leider wird aber BDD oft auf dieses Feature reduziert.
-                            Wird weder der kommunikative Ansatz genützt noch das "Test first"-Prinzip eingehalten kann man
+                            Wird weder der kommunikative Ansatz genützt noch das "Test-First"-Prinzip eingehalten kann man
                             kaum mehr von BDD sprechen. Dann ist es den Aufwand auch nicht mehr wert die Feature-Files zu
                             pflegen; es reicht mit Selenium GUI-Tests zu implementieren.
                     </aside>
@@ -1173,7 +1203,7 @@ public void ensureUserLoggedIn(String name)
                             <hr />
 
                             <h3>Automatisierte Builds</h3>
-                            <p class="readable">Build &rarr; Test &rarr; Deployment &rarr; Acceptance Tests &rarr; Documentation</p>
+                            <p class="readable">Build &rarr; Test &rarr; Deployment &rarr; Akzeptanz-Tests &rarr; Documentation</p>
 
                             <h3>Lokale Tests</h3>
                             <p class="readable">Gegen Entwicklungsumgebung</p>
@@ -1196,8 +1226,8 @@ public void ensureUserLoggedIn(String name)
 
                         <p>Wir verwenden Jenkins als CI-Umgebung. Dieser führt mehrmals am Tag einen vollständigen Build durch
                             und deployt die Applikation automatisch auf ein Testsystem. Sobald der Applikationsserver gestartet
-                            worden ist, beginnt der Akzeptanztest. Bei Fehlern werden sowohl der Product-Owner als auch der
-                            zuständige technische Architekt per Email verständigt.</p>
+                            worden ist, beginnt der Akzeptanz-Test. Bei Fehlern werden sowohl der Product-Owner als auch
+                            der zuständige technische Architekt per Email verständigt.</p>
                         <p>Anschließend wird noch die aktuelle Systemspezifikation generiert.</p>
                         <p>Dieses Vorgehen ist durch das Buch [Continous Delivery] inspiriert.</p>
                         <p>Natürlich können Entwickler Tests auch lokal durchführen. Dabei spielt die Robustheit der Tests wieder
@@ -1221,8 +1251,8 @@ public void ensureUserLoggedIn(String name)
                             <li>Ausführung trennen</li>
                         </ul>
 
-                        <p>Sobald man mehrere Akzeptanztests hat kann die Laufzeit der Tests zu einem Problem werden. Jenkins
-                            kann Jobs parallelisieren und die Ergebnisse wieder vereinen. Die Akzeptanztests werden in mehrere
+                        <p>Sobald man mehrere Akzeptanz-Tests hat kann die Laufzeit der Tests zu einem Problem werden. Jenkins
+                            kann Jobs parallelisieren und die Ergebnisse wieder vereinen. Die Akzeptanz-Tests werden in mehrere
                             Gruppen geteilt und parallel ausgeführt.
                         </p>
                         <p>Zur Zeit haben wir noch in keinem Projekt große Probleme mit der Laufzeit. Die Parallelisierung haben
@@ -1343,7 +1373,7 @@ public void ensureUserLoggedIn(String name)
                         </ul>
 
                         <h4>JBehave</h4>
-                        <p>JBehave ist sehr ähnlich zu Cucumber-JVM. Es ist ursprüngliche Framework von Dan North. Die aktivere
+                        <p>JBehave ist sehr ähnlich zu Cucumber-JVM. Es ist das ursprüngliche Framework von Dan North. Die aktivere
                             Community scheint aber Cucumber zu haben.</p>
 
                         <h4>JDave</h4>
@@ -1434,7 +1464,7 @@ public void ensureUserLoggedIn(String name)
                             <li>Durch POI Entwickelt</li>
                         </ul>
 
-                        <p>Hausintern werden alle Läufe von Akzeptanztests zentral getrackt. Dadurch ist es möglich die Tests
+                        <p>Hausintern werden alle Läufe von Akzeptanz-Tests zentral getrackt. Dadurch ist es möglich die Tests
                             historisch zu vergleichen. Dies ist hilfreich um z.B. Tests mit langer Laufzeit oder geringer
                             Robustheit zu finden.</p>
                         <p>Das Tool wurde von der Porsche Informatik entwickelt und ist Open Source.</p>
@@ -1444,8 +1474,9 @@ public void ensureUserLoggedIn(String name)
 
             <section>
                 <img src="success.svg" class="no-border">
-                <hr/>
                 <h2>Behavior Driven Development</h2>
+                <hr/>
+                <p><a href="http://thred.github.io/presentation-bdd/">http://thred.github.io/presentation-bdd/</a></p>
 
                 <aside class="notes">
                     <h2>Conclusio</h2>
